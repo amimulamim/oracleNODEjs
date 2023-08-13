@@ -17,5 +17,5 @@ const router = require('express-promise-router')();
 router.use("/employee",require('./employee'));
 router.use("/job",require('./job'));
 router.use("/driver",require('./driver'));
-
+router.use("/users",require('./users'));
 module.exports = router;
