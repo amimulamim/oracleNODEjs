@@ -14,7 +14,7 @@ class DriverRepository extends Repository{
     findOne = async function(id){
         // Binding occurs serially as present in the array
         const query = "SELECT * FROM driver WHERE id=:id";
-        const params = [id,id2];
+        const params = [id];
         const result = await this.query(query,params);
         return result;
     }
